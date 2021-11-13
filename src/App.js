@@ -23,29 +23,32 @@ function App() {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          {/* <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div> */}
+          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Contact</a>
+              </li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Places
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a className="dropdown-item" href="#">Manali</a></li>
+                  <li><a className="dropdown-item" href="#">Shimla</a></li>
+                  <li><a className="dropdown-item" href="#">Churdhar</a></li>
+                  <li><a className="dropdown-item" href="#">Kufri</a></li>
+                  <li><a className="dropdown-item" href="#">Amritsar</a></li>
+                  <li><a className="dropdown-item" href="#">Others</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" data-bs-interval={false}>
@@ -129,15 +132,15 @@ function App() {
       <div className="container mt-5">
         <footer className="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
           <div className="col-md-4 d-flex align-items-center">
-            <a style={{width: '20%'}} href="#" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <a style={{ width: '20%' }} href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
               Home
             </a>
-            <span style={{width: '80%'}} className="text-muted">© 2021 Company, Inc</span>
+            <span style={{ width: '80%' }} className="text-muted">© 2021 Company, Inc</span>
           </div>
 
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/chahal.lalit007" target="_blank"><img style={{height: '20px'}} src={fbIcon} alt="FB" /></a></li>
-            <li className="ms-3"><a className="text-muted" href="https://www.instagram.com/chahal.lalit007" target="_blank"><img style={{height: '20px'}} src={igIcon} alt="IG" /></a></li>
+            <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/chahal.lalit007" target={'_blank'}><img style={{ height: '20px' }} src={fbIcon} alt="FB" /></a></li>
+            <li className="ms-3"><a className="text-muted" href="https://www.instagram.com/chahal.lalit007" target={'_blank'}><img style={{ height: '20px' }} src={igIcon} alt="IG" /></a></li>
           </ul>
         </footer>
       </div>

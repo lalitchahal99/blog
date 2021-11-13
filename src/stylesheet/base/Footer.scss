@@ -1,0 +1,18 @@
+#my-footer {
+    .ftxt-home {
+        width: 20%;
+    }
+    .ftxt-company {
+        width: 80%;
+    }
+    .ffb-icon, .fig-icon {
+        height: 20px !important;
+    }
+    .scroll-to-top {
+        position: fixed;
+        bottom: 8px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+    }
+}

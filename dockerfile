@@ -5,17 +5,22 @@ FROM node:13.12.0-alpine
 WORKDIR /app
 
 # add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+# ENV PATH /app/node_modules/.bin:$PATH
 
+# RUN npm init -y 
 # install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install
-RUN npm install -g pm2
-RUN npm install -g serve
+# COPY package.json ./
+# COPY package-lock.json ./
+# RUN npm install
 
 # add app
 COPY . ./
 
+# RUN npm run build
+
 # start app
-CMD ["pm2 serve", "build"]
+# production environment
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

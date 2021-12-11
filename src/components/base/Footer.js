@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
 
-import fbIcon from '../../media/Icons/facebook.svg';
-import igIcon from '../../media/Icons/instagram.svg';
-
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -32,15 +29,16 @@ const Footer = () => {
 
     return (
         <>
-            <div id="my-footer" className="container mt-5">
-                <div className="scroll-to-top">
+            <div id="my-footer" className="container mx-0 my-0 px-0 py-0 fixed-bottom">
+                {/* <div className="scroll-to-top">
                     {isVisible && (
                         <div onClick={handleGoTop}>
                             <FontAwesomeIcon icon={faChevronCircleUp} size={'2x'} />
                         </div>
                     )}
-                </div>
-                <footer className="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+                </div> */}
+                <hr className="my-0" style={{width: '200%'}} />
+                <footer className="d-flex flex-wrap justify-content-center align-items-center py-2">
                     <div className="col-md-4 d-flex align-items-center">
                         <a onClick={handleGoTop} className="ftxt-home mx-2 text-muted text-decoration-none lh-1">
                             Home
@@ -49,8 +47,8 @@ const Footer = () => {
                     </div>
 
                     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li className="ms-3"><a className="text-muted" href="https://www.facebook.com/chahal.lalit007" ><img className="ffb-icon" src={fbIcon} alt="FB" /></a></li>
-                        <li className="ms-3"><a className="text-muted" href="https://www.instagram.com/chahal.lalit007" ><img className="fig-icon" src={igIcon} alt="IG" /></a></li>
+                        <li className="ms-3"><a className="text-muted" target='_blank' href="https://www.facebook.com/chahal.lalit007" ><img className="ffb-icon" src={"https://firebasestorage.googleapis.com/v0/b/lalit-blog99.appspot.com/o/Icons%2Ffacebook.06425ee2.svg?alt=media&token=5574ef76-af27-4c62-ac94-6b0d82451794"} alt="FB" /></a></li>
+                        <li className="ms-3"><a className="text-muted" target='_blank' href="https://www.instagram.com/chahal.lalit007" ><img className="fig-icon" src={"https://firebasestorage.googleapis.com/v0/b/lalit-blog99.appspot.com/o/Icons%2Finstagram.f4f05188.svg?alt=media&token=6ca41ba5-94cf-472e-831b-7112290d8738"} alt="IG" /></a></li>
                     </ul>
                 </footer>
             </div>

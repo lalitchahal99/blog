@@ -1,2 +1,15 @@
-@import './stylesheet//base/Navbar.scss';
-@import './stylesheet/base/Footer.scss';
+@import "./stylesheet/base/Navbar.scss";
+@import "./stylesheet/base/Home.scss";
+@import "./stylesheet/base/Footer.scss";
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+
+    .fadeOut {
+        z-index: 9999;
+        opacity: 0.9;
+        transition: 1.5s;
+    }
+}

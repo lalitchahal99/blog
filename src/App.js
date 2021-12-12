@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Component } from 'react';
+import DeviceOrientation, { Orientation } from 'react-screen-orientation';
 import './App.scss';
-import { UserContext } from './components/Context';
 import Home from './components/base/Home';
 
 function App() {
@@ -11,13 +11,24 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <div className="fadeOut h-100 w-100 position-fixed bg-dark"></div>
-      <UserContext.Provider value="my new context dataset">
-        <Home />
-        
-      </UserContext.Provider>
+      <div className="fadeOut h-100 w-100 position-fixed bg-1"></div>
+      <Home />
     </div>
   );
 }
 
 export default App;
+
+
+
+// <DeviceOrientation lockOrientation={'portrait'}>
+//       <Orientation orientation='portrait' alwaysRender={true}>
+//         <div className="App">
+//           <div className="fadeOut h-100 w-100 position-fixed bg-1"></div>
+//           <ContactBtn.Provider value="my portfolio app">
+//             <Home />
+
+//           </ContactBtn.Provider>
+//         </div>
+//       </Orientation>
+//     </DeviceOrientation>

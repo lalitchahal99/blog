@@ -1,31 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.2c35390f.chunk.css",
-    "main.js": "./static/js/main.8600d886.chunk.js",
-    "main.js.map": "./static/js/main.8600d886.chunk.js.map",
+    "main.css": "./static/css/main.142e1f60.chunk.css",
+    "main.js": "./static/js/main.66b2ee28.chunk.js",
+    "main.js.map": "./static/js/main.66b2ee28.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.04f8fd2f.js",
     "runtime-main.js.map": "./static/js/runtime-main.04f8fd2f.js.map",
     "static/css/2.a75f5a2c.chunk.css": "./static/css/2.a75f5a2c.chunk.css",
-    "static/js/2.9c43edf6.chunk.js": "./static/js/2.9c43edf6.chunk.js",
-    "static/js/2.9c43edf6.chunk.js.map": "./static/js/2.9c43edf6.chunk.js.map",
+    "static/js/2.4c974917.chunk.js": "./static/js/2.4c974917.chunk.js",
+    "static/js/2.4c974917.chunk.js.map": "./static/js/2.4c974917.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.a75f5a2c.chunk.css.map": "./static/css/2.a75f5a2c.chunk.css.map",
-    "static/css/main.2c35390f.chunk.css.map": "./static/css/main.2c35390f.chunk.css.map",
-    "static/js/2.9c43edf6.chunk.js.LICENSE.txt": "./static/js/2.9c43edf6.chunk.js.LICENSE.txt",
-    "static/media/p1.4167568b.jpg": "./static/media/p1.4167568b.jpg",
-    "static/media/p2.69166f26.jpg": "./static/media/p2.69166f26.jpg",
-    "static/media/p3.8cf1733b.jpg": "./static/media/p3.8cf1733b.jpg",
-    "static/media/p4.346eb631.jpg": "./static/media/p4.346eb631.jpg",
-    "static/media/p5.35063472.jpg": "./static/media/p5.35063472.jpg",
-    "static/media/p6.5bedda4a.jpg": "./static/media/p6.5bedda4a.jpg",
-    "static/media/p7.6fa1cfb2.jpg": "./static/media/p7.6fa1cfb2.jpg",
-    "static/media/p8.c7130378.jpg": "./static/media/p8.c7130378.jpg"
+    "static/css/main.142e1f60.chunk.css.map": "./static/css/main.142e1f60.chunk.css.map",
+    "static/js/2.4c974917.chunk.js.LICENSE.txt": "./static/js/2.4c974917.chunk.js.LICENSE.txt",
+    "static/media/bg_animation.23d22647.svg": "./static/media/bg_animation.23d22647.svg",
+    "static/media/bg_animation2.88e9bace.svg": "./static/media/bg_animation2.88e9bace.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.04f8fd2f.js",
     "static/css/2.a75f5a2c.chunk.css",
-    "static/js/2.9c43edf6.chunk.js",
-    "static/css/main.2c35390f.chunk.css",
-    "static/js/main.8600d886.chunk.js"
+    "static/js/2.4c974917.chunk.js",
+    "static/css/main.142e1f60.chunk.css",
+    "static/js/main.66b2ee28.chunk.js"
   ]
 }

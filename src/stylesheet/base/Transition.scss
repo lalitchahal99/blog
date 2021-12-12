@@ -1,0 +1,18 @@
+.dashboard, .contact {
+    transition: 2s;
+}
+
+.dashboardTranslateLeft {
+    transform: translateX(-100%) !important;
+}
+.contactTranslateLeft {
+    transform: translateX(-100%) !important;
+}
+.contactTranslateRight {
+    transform: translateX(100%) !important;
+}
+
+.contact {
+    position: fixed;
+    top: 0px;
+}

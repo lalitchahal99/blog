@@ -1,35 +1,30 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { bg1 } from './bg';
-import Title from "./Title";
+import Dashboard from "./Dashboard";
+import Contact from "../contact/Contact";
 
-import { Carousel } from 'bootstrap';
-import { UserContext } from "../Context";
-
-import pic1 from '../../media/Photo/Manali/p1.jpg';
-import pic2 from '../../media/Photo/Manali/p2.jpg';
-import pic3 from '../../media/Photo/Manali/p3.jpg';
-import pic4 from '../../media/Photo/Manali/p4.jpg';
-import pic5 from '../../media/Photo/Manali/p5.jpg';
-import pic6 from '../../media/Photo/Manali/p6.jpg';
-import pic7 from '../../media/Photo/Manali/p7.jpg';
-import pic8 from '../../media/Photo/Manali/p8.jpg';
+// import { Carousel } from 'bootstrap';
+import { HomeBtn, ContactBtn } from "../Context";
 
 const Home = () => {
+    const [contact, setContact] = useState(false);
+    const [home, setHome] = useState(true);
     return (
         <>
-            {/* code for navbar */}
-            <Navbar />
+            <HomeBtn.Provider value={[home, setHome]} >
+                <ContactBtn.Provider value={[contact, setContact]} >
+                    {/* code for navbar */}
+                    <Navbar />
 
-            <div className="bg-dark h-75 w-100 position-relative">
-                {bg1}
-            </div>
+                    <Dashboard />
 
-            <Title />
+                    <Contact />
 
-            {/* code for footer */}
-            <Footer />
+                    {/* code for footer */}
+                    <Footer />
+                </ContactBtn.Provider>
+            </HomeBtn.Provider>
         </>
     )
 }

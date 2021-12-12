@@ -1,3 +1,9 @@
-import React, { createContext } from "react";
+import { createContext } from "react";
 
-export const UserContext = createContext();
+const HomeBtn = createContext(true);
+const ContactBtn = createContext(false);
+
+export {
+    HomeBtn,
+    ContactBtn,
+}

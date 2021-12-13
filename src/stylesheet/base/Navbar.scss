@@ -6,6 +6,9 @@
     .txt-1 {
         color: $tcolor1 !important;
     }
+    .txt-2 {
+        color: $tcolor2 !important;
+    }
     .bg-2 {
         background: $color2 !important;
     }
@@ -20,7 +23,17 @@
         border: 0px;
     }
     .nav-bg-1 {
-        background: rgb(14, 13, 13) !important;
+        background: $color1 !important;
+    }
+    .nav-bg-2 {
+        background: $color2 !important;
+    }
+
+    .navbar-background {
+        transition: 2s;
+    }
+    .navbar-brand , .nav-link {
+        transition: 2s;
     }
 
     .containerNavBtn {

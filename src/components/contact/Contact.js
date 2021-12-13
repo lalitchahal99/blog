@@ -9,9 +9,21 @@ const Contact = () => {
     useEffect(() => {
         if(contact === true) {
             document.querySelector('.contact').classList.remove('contactTranslateRight');
+            document.querySelector('.navbar-background').classList.replace('nav-bg-1', 'nav-bg-2');
+            document.querySelector('.navbar-brand').classList.replace('txt-1', 'txt-2');
+            var navLink = document.querySelectorAll('.nav-link');
+            for(var i=0; i< navLink.length; i++) {
+                navLink[i].classList.replace('txt-1', 'txt-2');
+            }
         }
         if(contact === false) {
             document.querySelector('.contact').classList.add('contactTranslateRight');
+            document.querySelector('.navbar-background').classList.replace('nav-bg-2', 'nav-bg-1');
+            document.querySelector('.navbar-brand').classList.replace('txt-2', 'txt-1');
+            var navLink = document.querySelectorAll('.nav-link');
+            for(var i=0; i< navLink.length; i++) {
+                navLink[i].classList.replace('txt-2', 'txt-1');
+            }
         }
     } ,[contact])
     return (
